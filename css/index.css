@@ -14,9 +14,44 @@ button {
   cursor: pointer;
 }
 
+h1, h2, p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(5deg, #6565e7, #af67e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 80%;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+  top: -130px;
+}
+
 .attribution {
-  font-size: 11px;
+  position: absolute;
+  bottom: 0;
   text-align: center;
+  width: 100%;
+}
+.attribution p {
+  margin: 0 auto;
 }
 .attribution a {
   color: #3e52a3;

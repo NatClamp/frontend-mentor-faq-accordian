@@ -13,3 +13,9 @@
   button {
     cursor: pointer;
   }
+
+  h1, h2, p {
+    font-family: $font;
+    font-size: $body-size;
+    font-weight: $body-weight;
+}
