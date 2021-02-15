@@ -83,6 +83,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 .card__right .question__content {
   color: #4a4b5e;
