@@ -36,6 +36,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media only screen and (min-width: 700px) {
+  .container {
+    max-width: 1440px;
+  }
+}
 
 .card {
   max-width: 300px;
@@ -44,15 +49,40 @@ body {
   background-image: url("../images/bg-pattern-mobile.svg");
   background-position: top;
   background-repeat: no-repeat;
-  padding: 2rem 1.5rem 3rem 1.5rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (min-width: 700px) {
+  .card {
+    max-width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    background-image: none;
+  }
+}
+
+.card__left {
+  height: 100%;
+}
+@media only screen and (min-width: 700px) {
+  .card__left {
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -560px -310px;
+  }
 }
 
 .img-container {
   position: relative;
   width: 100%;
+}
+@media only screen and (min-width: 700px) {
+  .img-container {
+    margin-top: 50px;
+    left: -70px;
+  }
 }
 
 .main-img--mobile {
@@ -60,23 +90,71 @@ body {
   position: absolute;
   max-width: 250px;
   margin: 0 auto;
-  top: -125px;
-  left: -10px;
+  top: -100px;
+  left: 10px;
+}
+@media only screen and (min-width: 700px) {
+  .main-img--mobile {
+    display: none;
+  }
+}
+
+.main-img--desktop {
+  max-width: 500px;
+  display: block;
+  top: 300px;
+  clip-path: inset(0px 0px 0px 67px);
+}
+@media only screen and (max-width: 700px) {
+  .main-img--desktop {
+    display: none;
+  }
+}
+
+.box-img--desktop {
+  position: absolute;
+  z-index: 3;
+  top: 140px;
+  left: -25px;
+}
+@media only screen and (max-width: 700px) {
+  .box-img--desktop {
+    display: none;
+  }
 }
 
 .card__right {
-  margin-top: 2rem;
+  margin: 2rem;
+}
+@media only screen and (min-width: 700px) {
+  .card__right {
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
 }
 .card__right h1 {
-  margin-top: 1rem;
+  margin-top: 3rem;
   padding: 3rem 0 1rem 0;
   text-align: center;
   font-weight: 700;
   font-size: 34px;
 }
+@media only screen and (min-width: 700px) {
+  .card__right h1 {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+  }
+}
 .card__right .accordian__section {
   padding: 0.5rem 0;
   border-bottom: #e7e7e9 1px solid;
+}
+@media only screen and (min-width: 700px) {
+  .card__right .accordian__section {
+    max-width: 400px;
+  }
 }
 .card__right .question {
   padding: 1rem 0;
