@@ -188,12 +188,14 @@ body {
   bottom: 0;
   text-align: center;
   width: 100%;
+  padding: 2rem 0;
 }
 .attribution p {
   margin: 0 auto;
+  color: #1d1e35;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #f47c57;
 }
 
 /*# sourceMappingURL=index.css.map */
